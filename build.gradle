@@ -1,6 +1,7 @@
 plugins {
     id 'org.springframework.boot' version '2.1.7.RELEASE'
     id 'java'
+    id 'war'
 }
 
 apply plugin: 'io.spring.dependency-management'
@@ -21,10 +22,15 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    compileOnly("org.projectlombok:lombok:1.18.8")
+    testCompileOnly("org.projectlombok:lombok:1.18.8")
+    annotationProcessor("org.projectlombok:lombok:1.18.8")
+    testAnnotationProcessor("org.projectlombok:lombok:1.18.8")
+
     implementation 'org.springframework.boot:spring-boot-starter-data-rest'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-web-services'
+    compile 'org.springframework.boot:spring-boot-starter-data-mongodb'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
