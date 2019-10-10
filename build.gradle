@@ -1,6 +1,12 @@
 plugins {
     id 'org.springframework.boot' version '2.1.7.RELEASE'
     id 'java'
+    id 'eclipse'
+    id 'idea'
+}
+jar {
+    baseName = 'app'
+    version = '0.0.1'
 }
 
 apply plugin: 'io.spring.dependency-management'
@@ -20,6 +26,8 @@ repositories {
     mavenCentral()
 }
 
+
+
 dependencies {
     compileOnly("org.projectlombok:lombok:1.18.8")
     testCompileOnly("org.projectlombok:lombok:1.18.8")
@@ -33,3 +41,6 @@ dependencies {
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
+
+
+
