@@ -1,4 +1,4 @@
-package com.porfolio.blogs.Model;
+package com.porfolio.blogs.model;
 
 
 import com.fasterxml.jackson.annotation.JsonProperty;

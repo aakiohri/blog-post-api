@@ -1,8 +1,8 @@
-package com.porfolio.blogs.Controller;
+package com.porfolio.blogs.controller;
 
 import com.porfolio.blogs.SequenceGeneratorService;
-import com.porfolio.blogs.Model.Blog;
-import com.porfolio.blogs.Repository.BlogRepository;
+import com.porfolio.blogs.model.Blog;
+import com.porfolio.blogs.repository.BlogRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

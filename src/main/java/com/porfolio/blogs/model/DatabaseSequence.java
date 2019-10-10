@@ -1,4 +1,4 @@
-package com.porfolio.blogs.Model;
+package com.porfolio.blogs.model;
 
 import lombok.Getter;
 import lombok.Setter;

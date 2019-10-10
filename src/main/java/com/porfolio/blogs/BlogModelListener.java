@@ -1,6 +1,6 @@
 package com.porfolio.blogs;
 
-import com.porfolio.blogs.Model.*;
+import com.porfolio.blogs.model.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.mapping.event.AbstractMongoEventListener;
